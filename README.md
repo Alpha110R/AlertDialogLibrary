@@ -17,7 +17,7 @@ allprojects {
 Step 2. Add the dependency:
 ```
 dependencies {
-  implementation 'com.github.Alpha110R:AlertDialogLibrary:1.00.01'
+  implementation 'com.github.Alpha110R:AlertDialogLibrary:1.00.02'
 }
 ```
 ## Usage
@@ -26,12 +26,12 @@ dependencies {
 ```java
 
 // For AlertDialog -
-       Utils.showAlertDialog(this,
-                          "TITLE",  //Title
-                          "Message",//Message Text
-                          "OK",     //Positive Button Text
-                          "CANCEL", //Negative Button Text
-                          0,        //Icon Reasorce Id
+       AlertDialogUtils.showAlertDialog(this,
+                                        "TITLE",  //Title
+                                        "Message",//Message Text
+                                        "OK",     //Positive Button Text
+                                        "CANCEL", //Negative Button Text
+                                        0,        //Icon Reasorce Id
                 new AlertDialogManager.AlertDialogListener() {  //AlertDialog Listener
                             @Override
                             public void onPositiveClick() {
@@ -48,7 +48,7 @@ dependencies {
 ```
 ## What's new ?
 
-1.00.01:
+1.00.02:
 
 ## License
 
