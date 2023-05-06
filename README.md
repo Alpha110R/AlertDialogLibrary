@@ -27,12 +27,12 @@ dependencies {
 
 // For AlertDialog -
        Utils.showAlertDialog(this,
-                          "TITLE", 
-                          "Message",
-                          "OK",
-                          "CANCEL",
-                          0,
-                new AlertDialogManager.AlertDialogListener() {
+                          "TITLE",  //Title
+                          "Message",//Message Text
+                          "OK",     //Positive Button Text
+                          "CANCEL", //Negative Button Text
+                          0,        //Icon Reasorce Id
+                new AlertDialogManager.AlertDialogListener() {  //AlertDialog Listener
                             @Override
                             public void onPositiveClick() {
                                 Toast.makeText(MainActivity.this, "Clicked OK",Toast.LENGTH_SHORT).show();
@@ -43,7 +43,6 @@ dependencies {
                                 Toast.makeText(MainActivity.this, "Clicked CANCEL",Toast.LENGTH_SHORT).show();
                 
                             }
-
                 });
 
 ```
