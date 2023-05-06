@@ -37,3 +37,14 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
+
+publishing {
+    publications {
+        release(MavenPublication) {
+            groupId = 'com.github.alpha110r'
+            artifactId = 'alertdialoglibrary-alon'
+            version = '1.00.01'
+            afterEvaluate { from components.release }
+        }
+    }
+}
